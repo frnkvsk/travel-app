@@ -1,0 +1,22 @@
+@use '../abstracts';
+
+.model {
+  @include abstracts.position(fixed, 0, 0, 0, 0, 100%, 100%);
+  @include abstracts.align(flex, center, center, auto);
+  background: rgba($color: #000000, $alpha: 0.4);
+  &__heading {
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__body {
+    @include abstracts.animation(modelAnimate, 0.5s, linear, -10rem, 0);
+    background: abstracts.$white;
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+}
