@@ -9,17 +9,17 @@ const Header = ({heading, paragraph, children}) => {
    return (
       <>
       <div className='header'>
-         <div className='container pr'>
-            <div className='header__logo'>
-               <img src={state.logo} alt='logo' />
-            </div>
-         </div>
          <div className='header__video'>
          <video src={state.video} autoPlay loop muted poster={state.poster}></video>
          </div>
       </div>
       <div className='header__contents'>
          <div className='container'>
+            <div className='container pr'>
+               <div className='header__logo'>
+                  <img src={state.logo} alt='logo' />
+               </div>
+            </div>
             <div className='header__contents__text'>
                <div className='header__contents__text__child'>
                   <div className='header__contents__text__child__h1'>
@@ -31,7 +31,6 @@ const Header = ({heading, paragraph, children}) => {
                   <div className='header__contents__text__child__link'>
                      {children}
                   </div>
-
                </div>
             </div>
          </div>

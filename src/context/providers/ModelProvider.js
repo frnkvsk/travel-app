@@ -1,4 +1,4 @@
-import React, {useReducer, } from 'react';
+import React, {useReducer} from 'react';
 
 import ModelContext from '../ModelContext';
 import ModelReducer from '../reducers/ModelReducer';

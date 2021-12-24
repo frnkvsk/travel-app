@@ -5,6 +5,7 @@
   height: 100vh;
   position: relative;
   clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%, 0 100%, 0% 60%, 0 0);
+  background-color: rgba($color: #000000, $alpha: 0.4);
   &__logo {
     @include abstracts.position(absolute, 3rem, 0, null, null, null, null);
     z-index: 1;
@@ -20,7 +21,7 @@
   }
   &__contents {
     @include abstracts.position(absolute, 0, 0, null, null, 100%, 100%);
-    background-color: rgba($color: #000000, $alpha: 0.4);
+
     &__text {
       @include abstracts.align(flex, center, center, 100vh);
       &__child {

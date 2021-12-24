@@ -51,3 +51,11 @@
     }
   }
 }
+@mixin toggleSpans($bg, $width, $height, $mt) {
+  display: block;
+  background: $bg;
+  width: $width;
+  height: $height;
+  margin-top: $mt;
+  transition: all 0.1s linear;
+}

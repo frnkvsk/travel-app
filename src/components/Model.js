@@ -19,7 +19,7 @@ const Model = (props) => {
             </div>
          </div>
       ) : null
-      )
+   )
      
    
 }
